@@ -1,0 +1,14 @@
+<h1>THERE ARE {{ count }} WORDS IN THIS TEXT</h1>
+
+<a href="{% url 'home' %}">START AGAIN</a>
+
+<h1>YOUR TEXT</h1>
+{{ fulltext }}
+
+<h1>WORD COUNT:</h1>
+{% for key, value in sortdict %}
+
+{{ key }} - {{ value }}
+<br>
+
+{% endfor %}
